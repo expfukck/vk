@@ -1,0 +1,24 @@
+version: '3'#版本号
+services:
+  www:#服务名称
+    image: tokumeikoi/lcrp#镜像地址
+    volumes:#文件映射
+      - './www:/www'
+      - './wwwlogs:/wwwlogs'
+      - './caddy.conf:/run/caddy/caddy.conf'
+      - './supervisord.conf:/run/supervisor/supervisord.conf'
+      - './crontabs.conf:/etc/crontabs/root'
+      - './.caddy:/root/.caddy'
+     ports:#开放端口
+      - '80:80'
+      - '443:443'
+    restart: always #开启总是启动容器
+    network_mode: host #与主机网络一致
+  mysql: #新服务名称
+    image: mysql:5.7.29 #镜像地址
+    volumes: #文件映射
+      - './mysql:/var/lib/mysql'
+    restart: always #开启总是启动容器
+    environment: #环境变量
+      MYSQL_ROOT_PASSWORD: v2boardisbest
+      MYSQL_DATABASE: v2board
