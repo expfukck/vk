@@ -62,5 +62,3 @@ ENTRYPOINT <span class="token punctuation">[</span><span class="token string">"/
 
 <span class="token comment"># 指定默认暴露端口, 这样在容器运行时可以知道应该映射哪些端口</span>
 EXPOSE <span class="token number">8888</span>
-
-        </div>
