@@ -1,5 +1,5 @@
 # 个人使用
-#PROCESS-NAME,一样一样.exe
+PROCESS-NAME,一样一样.exe
 PROCESS-NAME,SunloginClient.exe
 PROCESS-NAME,AnyDesk.exe
 PROCESS-NAME,Skype.exe
@@ -7,5 +7,5 @@ DOMAIN-SUFFIX,Skype.com
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,AnyDesk.com
-#IP-CIDR,103.86.84.0/24,no-resolve
-#IP-CIDR,103.91.211.0/24,no-resolve
+IP-CIDR,103.86.84.0/24,no-resolve
+IP-CIDR,103.91.211.0/24,no-resolve
